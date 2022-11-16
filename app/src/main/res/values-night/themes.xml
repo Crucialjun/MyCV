@@ -3,7 +3,7 @@
     <style name="Theme.MyCV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorPrimaryVariant">@color/accent_green</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -11,7 +11,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:windowLightStatusBar">true</item>
+
         <!-- Customize your theme here. -->
     </style>
 </resources>
