@@ -83,6 +83,7 @@
         </com.google.android.material.textview.MaterialTextView>
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_header"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -99,6 +100,20 @@
             app:layout_constraintTop_toBottomOf="@id/txt_my_name">
 
         </com.google.android.material.textview.MaterialTextView>
+
+        <GridView
+            android:id="@+id/grid_contact_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:numColumns="auto_fit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_header">
+
+
+
+        </GridView>
 
 
 
