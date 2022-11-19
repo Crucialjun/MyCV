@@ -12,14 +12,17 @@ import com.example.mycv.databinding.ContactInfoGridItemBinding
 class ContactGridAdapter(context: Context, gridItems: ArrayList<ContactGridItemModel>) :
     ArrayAdapter<ContactGridItemModel>(context, 0, gridItems) {
 
+    private lateinit var binding : ContactInfoGridItemBinding
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        var listView = convertView
-        val  binding :ContactInfoGridItemBinding =
-            ContactInfoGridItemBinding.inflate(LayoutInflater.from(context),parent,false)
+        val listView : View
 
-        if(listView == null){
-
+        if(convertView == null){
+            binding =
+                ContactInfoGridItemBinding.inflate(LayoutInflater.from(context),parent,false)
                 listView = binding.root
+        }else{
+            listView = convertView
         }
 
         val contactGridItem : ContactGridItemModel? = getItem(position)
