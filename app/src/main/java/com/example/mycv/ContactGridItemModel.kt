@@ -1,3 +1,5 @@
 package com.example.mycv
 
-data class ContactGridItemModel(var imageId : String,var itemName : String)
+data class ContactGridItemModel(var imageId : Int,var itemName : String){
+
+}

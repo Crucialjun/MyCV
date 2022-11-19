@@ -1,22 +1,33 @@
 package com.example.mycv
 
 import android.content.Context
+import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import com.example.mycv.databinding.ActivityMainBinding
+import com.example.mycv.databinding.ContactInfoGridItemBinding
 
-class ContactGridAdapter(context: Context, gridItems: Array<ContactGridItemModel>) :
+class ContactGridAdapter(context: Context, gridItems: ArrayList<ContactGridItemModel>) :
     ArrayAdapter<ContactGridItemModel>(context, 0, gridItems) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var listView = convertView
+        val  binding :ContactInfoGridItemBinding =
+            ContactInfoGridItemBinding.inflate(LayoutInflater.from(context),parent,false)
 
         if(listView == null){
-            listView = LayoutInflater.from(context).inflate(R.layout.contact_info_grid_item,parent,false)
+
+                listView = binding.root
         }
 
+        val contactGridItem : ContactGridItemModel? = getItem(position)
 
-        return super.getView(position, convertView, parent)
+        binding.imgGridItemImage.setImageResource(contactGridItem!!.imageId)
+        binding.txtGridItemName.text = contactGridItem.itemName
+
+
+        return listView
     }
 }

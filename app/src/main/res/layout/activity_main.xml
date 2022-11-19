@@ -102,15 +102,17 @@
         </com.google.android.material.textview.MaterialTextView>
 
         <GridView
+            android:orientation="horizontal"
             android:id="@+id/grid_contact_items"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
             android:elevation="2dp"
             android:numColumns="auto_fit"
+            android:columnWidth="150dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_header">
-
+            app:layout_constraintTop_toBottomOf="@id/txt_header"
+            tools:listitem="@layout/contact_info_grid_item">
 
 
         </GridView>
