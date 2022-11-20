@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val contactItems : ArrayList<ContactGridItemModel>  = ArrayList<ContactGridItemModel>()
 
-        contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_my_location_24,"My Location"))
-        contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_my_location_24,"My Location"))
+        contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_my_location_24,"Nairobi, Kenya"))
+        contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_email_24,"nich.otieno@gmail.com"))
         contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_my_location_24,"My Location"))
         contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_my_location_24,"My Location"))
         contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_my_location_24,"My Location"))
