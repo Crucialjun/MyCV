@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         contactItems.add(ContactGridItemModel(R.drawable.github,"Cruciajun"))
         contactItems.add(ContactGridItemModel(R.drawable.stackoverflow,"Cruciajun"))
         contactItems.add(ContactGridItemModel(R.drawable.youtube,"Crucial Tech"))
+        contactItems.add(ContactGridItemModel(R.drawable.hackerrank32,"Crucial Tech"))
 
         val adapter = ContactGridAdapter(this,contactItems)
 
