@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         contactItems.add(ContactGridItemModel(R.drawable.ic_baseline_local_phone_24,"+254 726575615"))
         contactItems.add(ContactGridItemModel(R.drawable.linkedin,"nich-otieno"))
         contactItems.add(ContactGridItemModel(R.drawable.github,"Cruciajun"))
-        contactItems.add(ContactGridItemModel(R.drawable.github,"Cruciajun"))
+        contactItems.add(ContactGridItemModel(R.drawable.stackoverflow,"Cruciajun"))
+        contactItems.add(ContactGridItemModel(R.drawable.youtube,"Crucial Tech"))
 
         val adapter = ContactGridAdapter(this,contactItems)
 
