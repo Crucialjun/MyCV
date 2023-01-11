@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph"
-        >
+        tools:layout="@layout/fragment_dashboard">
 
     </androidx.fragment.app.FragmentContainerView>
 

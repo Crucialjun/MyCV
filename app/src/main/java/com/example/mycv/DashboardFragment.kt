@@ -1,6 +1,7 @@
 package com.example.mycv
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -40,6 +41,14 @@ class DashboardFragment : Fragment() {
 
         binding.gridContactItems.adapter = adapter
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.experienceCard.setOnClickListener {
+            Log.d("TAG", "onViewCreated:experience card clicked ")
+        }
     }
 
     override fun onDestroyView() {

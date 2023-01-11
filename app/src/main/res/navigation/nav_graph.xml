@@ -7,5 +7,14 @@
     <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.example.mycv.DashboardFragment"
-        android:label="DashboardFragment" />
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_experienceFragment"
+            app:destination="@id/experienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="com.example.mycv.ExperienceFragment"
+        android:label="fragment_experience"
+        tools:layout="@layout/fragment_experience" />
 </navigation>
