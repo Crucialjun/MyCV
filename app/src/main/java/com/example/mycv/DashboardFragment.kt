@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.mycv.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -47,7 +48,8 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.experienceCard.setOnClickListener {
-            Log.d("TAG", "onViewCreated:experience card clicked ")
+            val action = DashboardFragmentDirections.actionDashboardFragmentToExperienceFragment()
+            view.findNavController().navigate(action)
         }
     }
 
