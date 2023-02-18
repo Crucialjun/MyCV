@@ -51,6 +51,10 @@ class DashboardFragment : Fragment() {
             val action = DashboardFragmentDirections.actionDashboardFragmentToExperienceFragment()
             view.findNavController().navigate(action)
         }
+        binding.backgroundCard.setOnClickListener {
+            val action = DashboardFragmentDirections.actionDashboardFragmentToBackgroundFragment()
+            view.findNavController().navigate(action)
+        }
     }
 
     override fun onDestroyView() {

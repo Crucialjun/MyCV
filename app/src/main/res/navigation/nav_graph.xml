@@ -11,10 +11,18 @@
         <action
             android:id="@+id/action_dashboardFragment_to_experienceFragment"
             app:destination="@id/experienceFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_backgroundFragment"
+            app:destination="@id/backgroundFragment" />
     </fragment>
     <fragment
         android:id="@+id/experienceFragment"
         android:name="com.example.mycv.ExperienceFragment"
         android:label="fragment_experience"
         tools:layout="@layout/fragment_experience" />
+    <fragment
+        android:id="@+id/backgroundFragment"
+        android:name="com.example.mycv.BackgroundFragment"
+        android:label="fragment_background"
+        tools:layout="@layout/fragment_background" />
 </navigation>
