@@ -206,192 +206,346 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:background="@android:color/white"
-        android:id="@+id/cardView2"
-        android:layout_width="0dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:elevation="8dp"
-        android:padding="16dp"
-        app:cardCornerRadius="8dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Skills"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold">
-
-            </com.google.android.material.textview.MaterialTextView>
-
-            <com.google.android.material.divider.MaterialDivider
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_margin="4dp"
-                app:dividerColor="@color/accent_green">
-
-            </com.google.android.material.divider.MaterialDivider>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/white"
+            android:elevation="8dp"
+            android:padding="16dp"
+            app:cardCornerRadius="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:padding="16dp"
-                    android:src="@drawable/flutter_logo">
-
-                </ImageView>
-
-                <Space
-                    android:layout_width="16dp"
-                    android:layout_height="wrap_content">
-
-                </Space>
-
-                <LinearLayout
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:layout_marginStart="8dp"
+                    android:text="Skills"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Flutter Software Development"
-                        android:textSize="16sp"
-                        android:textStyle="bold">
+                </com.google.android.material.textview.MaterialTextView>
 
-                    </TextView>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="4dp"
+                    app:dividerColor="@color/accent_green">
 
-                    <RatingBar
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:isIndicator="true"
-                        android:rating="5"
-                        android:layout_width="wrap_content"
+                </com.google.android.material.divider.MaterialDivider>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+
+                        android:padding="16dp"
+                        android:src="@drawable/flutter_logo">
+
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="16dp"
                         android:layout_height="wrap_content">
 
-                    </RatingBar>
+                    </Space>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flutter Software Development"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="5">
+
+                        </RatingBar>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:padding="16dp"
-                    android:src="@drawable/android_logo">
-
-                </ImageView>
-
-                <Space
-                    android:layout_width="16dp"
-                    android:layout_height="wrap_content">
-
-                </Space>
-
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Android Software Development (Kotlin)"
-                        android:textSize="16sp"
-                        android:textStyle="bold">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
 
-                    </TextView>
+                        android:padding="16dp"
+                        android:src="@drawable/android_logo">
 
-                    <RatingBar
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:isIndicator="true"
-                        android:rating="4"
-                        android:layout_width="wrap_content"
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="16dp"
                         android:layout_height="wrap_content">
 
-                    </RatingBar>
+                    </Space>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Android Software Development (Kotlin)"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="4">
+
+                        </RatingBar>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:padding="16dp"
-                    android:src="@drawable/android_logo">
-
-                </ImageView>
-
-                <Space
-                    android:layout_width="16dp"
-                    android:layout_height="wrap_content">
-
-                </Space>
-
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Android Software Development (Java)"
-                        android:textSize="16sp"
-                        android:textStyle="bold">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:padding="16dp"
+                        android:src="@drawable/android_logo">
 
-                    </TextView>
+                    </ImageView>
 
-                    <RatingBar
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:isIndicator="true"
-                        android:rating="3"
-                        android:layout_width="wrap_content"
+                    <Space
+                        android:layout_width="16dp"
                         android:layout_height="wrap_content">
 
-                    </RatingBar>
+                    </Space>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Android Software Development (Java)"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="3">
+
+                        </RatingBar>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:padding="16dp"
+                        android:src="@drawable/python_logo">
+
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content">
+
+                    </Space>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="3">
+
+                        </RatingBar>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:padding="16dp"
+                        android:src="@drawable/networking">
+
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content">
+
+                    </Space>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Networking and Network Management"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="5">
+
+                        </RatingBar>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:padding="16dp"
+                        android:src="@drawable/computer">
+
+                    </ImageView>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content">
+
+                    </Space>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Computer Applications"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="5">
+
+                        </RatingBar>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
             </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
 
 
-        </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
