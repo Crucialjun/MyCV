@@ -154,6 +154,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
+                   android:padding="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -167,6 +168,12 @@
                         app:tint="@color/white">
 
                     </ImageView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp">
+
+                    </Space>
 
                     <TextView
                         android:textStyle="bold"
@@ -206,6 +213,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline4">
 
                 <LinearLayout
+                    android:padding="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -219,6 +227,12 @@
                         app:tint="@color/white">
 
                     </ImageView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp">
+
+                    </Space>
 
                     <TextView
                         android:textStyle="bold"
@@ -258,6 +272,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline4">
 
                 <LinearLayout
+                    android:padding="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -271,6 +286,11 @@
                         app:tint="@color/white">
 
                     </ImageView>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp">
+
+                    </Space>
 
                     <TextView
                         android:textStyle="bold"
@@ -310,6 +330,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
+                    android:padding="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -323,6 +344,12 @@
                         app:tint="@color/white">
 
                     </ImageView>
+                    <Space
+
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp">
+
+                    </Space>
 
                     <TextView
                         android:layout_width="wrap_content"

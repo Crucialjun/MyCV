@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_backgroundFragment"
             app:destination="@id/backgroundFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_intrestsFragment"
+            app:destination="@id/intrestsFragment" />
     </fragment>
     <fragment
         android:id="@+id/experienceFragment"
@@ -25,4 +28,9 @@
         android:name="com.example.mycv.BackgroundFragment"
         android:label="fragment_background"
         tools:layout="@layout/fragment_background" />
+    <fragment
+        android:id="@+id/intrestsFragment"
+        android:name="com.example.mycv.IntrestsFragment"
+        android:label="fragment_intrests"
+        tools:layout="@layout/fragment_intrests" />
 </navigation>
